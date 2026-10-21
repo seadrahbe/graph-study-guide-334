@@ -36,6 +36,8 @@ public class Practice {
     if (current == null) return 0;
     if (visited.contains(current)) return 0;
 
+    visited.add(current);
+
     int num = 0;
 
     if (current.data % 2 != 0) {
